@@ -18,7 +18,7 @@ html {
   background-color: #0f1629;
 }
 .bg {
-  background-image: url("../img/bg.jpg");
+  /*background-image: url("../img/bg.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,14 +71,14 @@ a:hover {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-perspective: 1px;
-          perspective: 1px;
+  perspective: 1px;
 }
 .parallax__group {
   position: relative;
   height: 100vh;
   overflow-scrolling: touch;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .parallax__layer {
   position: absolute;
@@ -97,7 +97,7 @@ a:hover {
 }
 .parallax__layer--rocks {
   -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
   background-image: url("../img/mounts_1.png");
   margin-top: 78%;
   z-index: -3;
@@ -105,15 +105,20 @@ a:hover {
 .parallax__layer--river {
   position: fixed;
   -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
-  background-image: url("../img/mounts_2.png");
-  margin-top: 95%;
+  transform: translateZ(-2px) scale(3);
+  background-image: url("../img/formes_couleurs.svg");
+  margin-top: 110%;
   z-index: -4;
 }
+/*
+#decalageFormes{
+    filter: grayscale(100%);
+}
+*/
 .parallax__layer--back {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   background-image: url("../img/mounts_3.png");
   margin-top: 130%;
   z-index: -5;
@@ -121,15 +126,15 @@ a:hover {
 .parallax__layer--deep {
   position: fixed;
   -webkit-transform: translateZ(-4px) scale(5);
-          transform: translateZ(-4px) scale(5);
-  background-image: url("../img/mounts_4.png");
-  margin-top: 145%;
+  transform: translateZ(-4px) scale(5);
+  background-image: url("../img/montagneGrise.svg");
+  margin-top: 80%;
   z-index: -6;
 }
 .parallax__layer--drone-a {
   position: fixed;
   -webkit-transform: translateZ(0) scale(1);
-          transform: translateZ(0) scale(1);
+  transform: translateZ(0) scale(1);
   background-image: url("../img/montgolifiere2.svg");
   width: 13vw;
   margin-left: 50px;
@@ -139,7 +144,7 @@ a:hover {
 .parallax__layer--drone-b {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   background-image: url("../img/montgolifiere.svg");
   margin: auto;
   margin-top: 13%;
@@ -151,25 +156,24 @@ a:hover {
 .parallax__layer--logo {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
-          transform: translateZ(-3px) scale(4);
+  transform: translateZ(-3px) scale(4);
   background-image: url("../img/kym.svg");
   right: 0px;
   width: 20vw;
   margin-right: -50%;
-  margin-top: 13%;
   color: white;
   font-size: 50px;
   letter-spacing: 10px;
   text-align: center;
   margin: auto;
-  margin-top: 76%;
+  margin-top: 50%;
   z-index: -9;
 }
 .parallax__layer--bg {
   position: fixed;
   -webkit-transform: translateZ(-5px) scale(6);
-          transform: translateZ(-5px) scale(6);
-  background-image: url("../img/background.svg");
+  transform: translateZ(-5px) scale(6);
+  background-image: url("../img/ciel2.svg");
   background-size: 100%;
   height: 100vh;
   z-index: -10;
@@ -204,7 +208,7 @@ body {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 /* style the groups
 --------------------------------------------- */
@@ -283,10 +287,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .childFlex {
   width: 200px;
