@@ -217,6 +217,9 @@ a:hover {
 #formes .cls-4 {
   fill: #83d6de;
 }
+#roches {
+  fill: #3F3F3F;
+}
 .soleil {
   animation: tourneSoleil 10s linear infinite;
 }
