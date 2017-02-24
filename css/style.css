@@ -15,7 +15,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  background-color: #0f1629;
+  background-color: #3F3F3F;
 }
 .bg {
   /*background-image: url("../img/bg.jpg");*/
@@ -26,7 +26,7 @@ html {
 }
 .content {
   position: relative;
-  background-color: #0f1629;
+  background-color: #3F3F3F;
   min-height: 500px;
   width: 100%;
   font-family: "Arial";
@@ -35,7 +35,6 @@ html {
   font-size: 16px;
   margin: auto;
   text-align: center;
-  padding-top: 200px;
 }
 .content p {
   margin: auto;
@@ -72,6 +71,7 @@ a:hover {
   overflow-y: scroll;
   -webkit-perspective: 1px;
   perspective: 1px;
+  background-color: #3F3F3F;
 }
 .parallax__group {
   position: relative;
@@ -98,8 +98,8 @@ a:hover {
 .parallax__layer--rocks {
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  background-image: url("../img/mounts_1.png");
-  margin-top: 78%;
+  /*background-image: url("../img/mounts_1.png");*/
+  margin-top: 40%;
   z-index: -3;
 }
 .parallax__layer--river {
@@ -119,17 +119,24 @@ a:hover {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
-  background-image: url("../img/mounts_3.png");
-  margin-top: 130%;
+  /*background-image: url("../img/mounts_3.png");*/
+  margin-top: 80%;
+  width: 40vw;
+  margin-left: 90%;
   z-index: -5;
 }
 .parallax__layer--deep {
   position: fixed;
   -webkit-transform: translateZ(-4px) scale(5);
   transform: translateZ(-4px) scale(5);
-  background-image: url("../img/montagneGrise.svg");
-  margin-top: 80%;
+  /*background-image: url("../img/montagneGrise.svg");*/
+  width: 40vw;
+  margin-right: 40%;
+  margin-top: 100%;
   z-index: -6;
+}
+#montagneGrise2Decalee {
+  margin-right: 150%;
 }
 .parallax__layer--drone-a {
   position: fixed;
@@ -157,7 +164,7 @@ a:hover {
   position: fixed;
   -webkit-transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
-  background-image: url("../img/kym.svg");
+  /*background-image: url("../img/kym.svg");*/
   right: 0px;
   width: 20vw;
   margin-right: -50%;
@@ -213,9 +220,9 @@ body {
 /* style the groups
 --------------------------------------------- */
 .rock-cover {
-  margin-top: 30%;
+  margin-top: -5%;
   width: 100%;
-  height: 100%;
+  height: 0%;
   background-color: #0f1629;
 }
 .scroll-fill {
@@ -281,7 +288,6 @@ h1 {
   padding-left: 0px;
   padding-right: 0px;
 }
-/*KYM*/
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,4 +302,16 @@ h1 {
   width: 200px;
   height: 200px;
   margin: auto;
+}
+#signature {
+  position: fixed ;
+  width: 250px;
+  height: 250px;
+  left: 0;
+}
+#signature path {
+  fill-opacity: 0;
+  stroke: #007fff;
+  stroke-width: 1.5;
+  fill: #0fffff;
 }
