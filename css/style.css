@@ -223,6 +223,12 @@ a:hover {
 .soleil {
   animation: tourneSoleil 10s linear infinite;
 }
+.soleil circle {
+  fill: #FFF35F;
+}
+.soleil path {
+  fill: #FFE252;
+}
 @keyframes tourneSoleil {
   from {
     transform: rotate(0deg);
